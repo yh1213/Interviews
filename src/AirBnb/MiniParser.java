@@ -68,11 +68,8 @@ class Solution {
               stack.pop();
             }
             break;
-          //default:
-          //  break;
         }
       }
-      //return stack.isEmpty() ? null : stack.pop();
       return root;
     }
     
