@@ -5,7 +5,7 @@ class Solution {
   private static final int PAGE_SIZE = 12;
   
   private static void printPageNumber(int pageNum) {
-    System.out.println(String.format("Page%d", pageNum));
+    System.out.println(String.format("Page %d:", pageNum));
   }
                        
   public static void printByPage(List<String> inputList) {
@@ -28,7 +28,7 @@ class Solution {
         System.out.println(curRecord);
       }
       
-      if (hostIdSet.size() == PAGE_SIZE) {
+      if (hostIdSet.size() == PAGE_SIZE || !iterator.hasNext()) {
         hostIdSet.clear();
         iterator = inputList.iterator();
         pageNum++;
